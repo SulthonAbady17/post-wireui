@@ -16,9 +16,12 @@ class PostFactory extends Factory
      */
     public function definition(): array
     {
+        $body = fake()->paragraph();
+
         return [
             'title' => fake()->sentence(),
-            'body' => fake()->paragraph(),
+            'body' => $body,
+            'excerpt' => str()->excerpt($body)
         ];
     }
 }

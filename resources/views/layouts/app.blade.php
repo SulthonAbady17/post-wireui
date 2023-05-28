@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel</title>
+    <title>Laravel | WireUI</title>
 
     <!-- Styles --->
     @vite('resources/css/app.css')
     @livewireStyles
 </head>
-<body>
+<body class="dark:bg-gray-900">
+
+    @yield('content')
     
     <!-- Scripts --->
     @wireUiScripts

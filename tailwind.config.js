@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     presets: [require("./vendor/wireui/wireui/tailwind.config.js")],
@@ -10,7 +12,16 @@ module.exports = {
         "./vendor/wireui/wireui/src/View/**/*.php",
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                primary: colors.indigo,
+                secondary: colors.gray,
+                positive: colors.emerald,
+                negative: colors.red,
+                warning: colors.amber,
+                info: colors.blue,
+            },
+        },
     },
     corePlugins: {
         aspectRatio: false,
