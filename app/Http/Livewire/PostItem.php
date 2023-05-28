@@ -9,6 +9,15 @@ class PostItem extends Component
 {
     public Post $post;
     public bool $excerpt;
+    public bool $title;
+    public bool $back;
+
+    public function delete()
+    {
+        $this->post->deleteOrFail();
+
+        return redirect()->route('posts.index');
+    }
 
     public function render()
     {

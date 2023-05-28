@@ -20,4 +20,5 @@ Route::get('/', function () {
 
 Route::prefix('/posts')->group(function () {
     Route::get('/', [PostController::class, 'index'])->name('posts.index');
+    Route::get('/{slug}', [PostController::class, 'show'])->name('posts.show');
 });
