@@ -8,14 +8,19 @@ use Livewire\Component;
 class PostList extends Component
 {
     public string $search = '';
+
     public int $count = 4;
 
-    public function updatingSearch()
+    public $number;
+
+    public bool $text = false;
+
+    public function updatingSearch(): void
     {
         $this->reset();
     }
 
-    public function loadMore()
+    public function loadMore(): void
     {
         $this->count += 4;
     }

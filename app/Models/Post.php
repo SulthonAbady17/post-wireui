@@ -15,7 +15,7 @@ class Post extends Model
     public function toSearchableArray(): array
     {
         return [
-            'title' => $this->title
+            'title' => $this->title,
         ];
     }
 
@@ -23,15 +23,15 @@ class Post extends Model
     {
         return [
             'slug' => [
-                'source' => 'title'
-            ]
-            ];
+                'source' => 'title',
+            ],
+        ];
     }
 
     protected $fillable = [
         'title',
         'body',
         'excerpt',
-        'slug'
+        'slug',
     ];
 }

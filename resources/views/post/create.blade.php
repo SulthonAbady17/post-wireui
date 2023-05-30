@@ -4,17 +4,17 @@
     <section>
         <div class="container mx-auto">
             <div class="mx-4 my-8">
-                <x-card title="Your Posts" cardClasses="rounded-sm border-2 border-primary-200">
+                <x-card title="Create a Post" cardClasses="rounded-sm border-2">
                     <x-slot name="action">
                         <x-dropdown>
-                            <x-dropdown.item label="Create Post" href="{{ route('posts.create') }}" />
+                            <x-dropdown.item label="All Posts" href="{{ route('posts.index') }}" />
                             <x-dropdown.item label="My Profile" />
                             <x-dropdown.item label="Logout" />
                         </x-dropdown>
                     </x-slot>
 
                     <div class="mx-2 mb-10">
-                        <livewire:post-list />
+                        <livewire:post-create />
                     </div>
                 </x-card>
             </div>

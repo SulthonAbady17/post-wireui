@@ -21,7 +21,7 @@ class PostFactory extends Factory
         return [
             'title' => fake()->sentence(),
             'body' => $body,
-            'excerpt' => str()->excerpt($body)
+            'excerpt' => str()->excerpt($body),
         ];
     }
 }

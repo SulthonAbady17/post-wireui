@@ -1,5 +1,5 @@
 <div>
-    <x-card padding="p-4" cardClasses="rounded-sm border-2" footerClasses="flex justify-between">
+    <x-card padding="p-4" cardClasses="rounded-sm border-2 border-primary-200" footerClasses="flex justify-between">
         @if (! $title)
             <a href="{{ route('posts.show', $post->slug) }}"><h3 class="font-bold text-base">{{ $post->title }}</h3></a>
         @else

@@ -11,7 +11,7 @@
     @livewireStyles
 </head>
 <body class="dark:bg-gray-900">
-
+    
     @yield('content')
     
     <!-- Scripts --->

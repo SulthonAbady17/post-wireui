@@ -8,8 +8,11 @@ use Livewire\Component;
 class PostItem extends Component
 {
     public Post $post;
+
     public bool $excerpt;
+
     public bool $title;
+
     public bool $back;
 
     public function delete()
